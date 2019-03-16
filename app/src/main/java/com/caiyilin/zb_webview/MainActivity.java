@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TextView text=(TextView) findViewById(R.id.text);
-                text.setText(editText.getText());
                 String ipAddress  = editText.getText().toString();
 
                 Intent intent = new Intent (MainActivity.this, WebViewActivity.class);
